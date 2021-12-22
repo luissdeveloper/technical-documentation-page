@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root{
+    --generalFont: 'Poppins', sans-serif;
+    --regular: 400;
+    --bold:600;
+    --extraBold: 700;
+
+    --gray: #EEEEEE;
+    --yellow: #F6C90E;
+    --grayDark: #3A4750;
+    --black: #303841;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,:before,:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--generalFont);
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight:var(--bold);
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+}
+
+li{
+    list-style: square;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    margin: 4rem 0;
+}
+
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    font-size: 3rem;
+    font-weight: var(--bold);
+}
+
+code{
+    display: block;
+    background-color: var(--gray) ;
+    border-radius: 3px;
+    line-height: 2;
+    padding: 1rem;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: var(--gray) 1px solid;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#navbar header{
+    background-color: var(--grayDark);
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 1rem;
+    border-bottom: var(--gray) 1px solid;
+}
+
+#navbar li:hover{
+    background-color: var(--yellow);
+}
+
+main p{
+    line-height: 2; 
+}
+
+
+
+@media(min-width:768px){
+    body{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbar{
+        flex: 0 0 calc(20% - 1rem);
+        position: fixed;
+        min-width: 25rem;
+        width: 24rem;
+        height: 100vw;
+        padding: 5rem 2rem;
+    }
+
+    #navbar header{
+        font-size: 2.4rem;
+        font-weight: var(--bold);
+        margin-bottom: 3rem;
+        color: var(--black);
+        background-color: transparent;
+    }
+
+    #navbar li{
+        padding: 1rem;
+        border-bottom: var(--black) 1px solid;
+    }
+
+    #navbar li:hover{
+        background-color: var(--yellow);
+        transition: 0.3;
+        border-radius: 0.3rem;
+    }
+
+    #main-doc{
+        margin-left: 30rem;
+    }
+}
+

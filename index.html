@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es-co">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Javascript Manual" />
+    <title>Python Manual</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Manual</header>
+      <li><a class="nav-link" href="#intro">Intro</a></li>
+      <li><a class="nav-link" href="#syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#comments">Comments</a></li>
+      <li><a class="nav-link" href="#variables">Variables</a></li>
+      <li><a class="nav-link" href="#data_types">Data types</a></li>
+      <li><a class="nav-link" href="#numbers">Numbers</a></li>
+      <li><a class="nav-link" href="#casting">Casting</a></li>
+      <li><a class="nav-link" href="#strings">Strings</a></li>
+      <li><a class="nav-link" href="#booleans">Booleans</a></li>
+    </nav>
+    <main id="main-doc" class="container">
+      <section id="intro" class="main-section">
+        <header>Intro</header>
+        <p>
+          Python is a popular programming language. It was created by Guido van
+          Rossum, and released in 1991. It is used for:
+        </p>
+        <ul>
+          <li>web development (server-side)</li>
+          <li>software development,</li>
+          <li>mathematics</li>
+          <li>system scripting</li>
+        </ul>
+        <p>What can Python do?</p>
+        <ul>
+          <li>Python can be used on a server to create web applications.</li>
+          <li>Python can be used alongside software to create workflows.</li>
+          <li>
+            Python can connect to database systems. It can also read and modify
+            files.
+          </li>
+          <li>
+            Python can be used to handle big data and perform complex
+            mathematics.
+          </li>
+          <li>
+            Python can be used for rapid prototyping, or for production-ready
+            software development.
+          </li>
+        </ul>
+      </section>
+      <section id="syntax" class="main-section">
+        <header>Syntax</header>
+        <p>
+          Python syntax can be executed by writing directly in the Command Line:
+        </p>
+        <div><code> >>> print("Hello, World!") Hello, World! </code></div>
+      </section>
+      <section id="comments" class="main-section">
+        <header>Comments</header>
+        <p>Comments can be used to explain Python code.</p>
+        <p>Comments can be used to make the code more readable.</p>
+        <p>Comments can be used to prevent execution when testing code.</p>
+        <div><code> #This is a comment print("Hello, World!") </code></div>
+      </section>
+      <section id="variables" class="main-section">
+        <header>Variables</header>
+        <p>Variables are containers for storing data values.</p>
+        <p>Python has no command for declaring a variable.</p>
+        <p>A variable is created the moment you first assign a value to it.</p>
+        <div><code> x = 5 y = "John" print(x) print(y) </code></div>
+        <p>
+          Variable names: A variable can have a short name (like x and y) or a
+          more descriptive name (age, carname, total_volume). Rules for Python
+          variables:
+        </p>
+        <ul>
+          <li>
+            A variable name must start with a letter or the underscore character
+          </li>
+          <li>A variable name cannot start with a number</li>
+          <li>
+            A variable name can only contain alpha-numeric characters and
+            underscores (A-z, 0-9, and _ )
+          </li>
+          <li>
+            Variable names are case-sensitive (age, Age and AGE are three
+            different variables)
+          </li>
+        </ul>
+        <div>
+          <code>
+            myvar = "John" my_var = "John" _my_var = "John" myVar = "John" MYVAR
+            = "John" myvar2 = "John"
+          </code>
+        </div>
+        <p>Assign multiple values:</p>
+        <div>
+          <code>
+            x, y, z = "Orange", "Banana", "Cherry" print(x) print(y) print(z)
+          </code>
+        </div>
+      </section>
+      <section id="data_types" class="main-section">
+        <header>Data Types</header>
+        <p>In programming, data type is an important concept.</p>
+        <p>
+          Variables can store data of different types, and different types can
+          do different things.
+        </p>
+        <p>
+          Python has the following data types built-in by default, in these
+          categories:
+        </p>
+        <ul>
+          <li>Text Type: str</li>
+          <li>Numeric Types: int, float, complex</li>
+          <li>Sequence Types: list, tuple, range</li>
+          <li>Mapping Type: dict</li>
+          <li>Set Types: set, frozenset</li>
+          <li>Boolean Type: bool</li>
+          <li>Binary Types: bytes, bytearray, memoryview</li>
+        </ul>
+        <p>Getting data type:</p>
+        <div><code> x = 5 print(type(x)) </code></div>
+      </section>
+      <section id="numbers" class="main-section">
+        <header>Numbers</header>
+        <p>There are three numeric types in Python:</p>
+        <ul>
+          <li>int</li>
+          <li>float</li>
+          <li>complex</li>
+        </ul>
+        <div><code> x = 1 # int y = 2.8 # float z = 1j # complex </code></div>
+      </section>
+      <section id="casting" class="main-section">
+        <header>Casting</header>
+        <p>
+          There may be times when you want to specify a type on to a variable.
+          This can be done with casting. Python is an object-orientated
+          language, and as such it uses classes to define data types, including
+          its primitive types.
+        </p>
+        <p>Casting in python is therefore done using constructor functions:</p>
+        <ul>
+          <li>int()</li>
+          <li>float()</li>
+          <li>str()</li>
+        </ul>
+        <div>
+          <code>
+            x = int(1) # x will be 1 y = int(2.8) # y will be 2 z = int("3") # z
+            will be 3
+          </code>
+        </div>
+      </section>
+      <section id="strings" class="main-section">
+        <header>Strings</header>
+        <p>
+          Strings in python are surrounded by either single quotation marks, or
+          double quotation marks.
+        </p>
+        <p><span>'hello'</span> is the same as <span>"hello"</span>.</p>
+        <p>
+          You can display a string literal with the
+          <span>print()</span> function:
+        </p>
+        <div><code> print("Hello") print('Hello') </code></div>
+        <p>
+          Slicing: You can return a range of characters by using the slice
+          syntax.
+        </p>
+        <div><code> b = "Hello, World!" print(b[2:5]) </code></div>
+        <p>
+          Modify strings: Python has a set of built-in methods that you can use
+          on strings.
+        </p>
+        <div><code> a = "Hello, World!" print(a.upper()) </code></div>
+      </section>
+      <section id="booleans" class="main-section">
+        <header>Booleans</header>
+        <p>
+          In programming you often need to know if an expression is
+          <span>True</span> or <span>False.</span>
+        </p>
+        <p>
+          You can evaluate any expression in Python, and get one of two answers,
+          <span>True</span> or <span>False</span>.
+        </p>
+        <p>
+          When you compare two values, the expression is evaluated and Python
+          returns the Boolean answer:
+        </p>
+        <div><code> print(10 > 9) print(10 == 9) print(10 < 9) </code></div>
+        <p>
+          String concatenation: To concatenate, or combine, two strings you can
+          use the + operator.
+        </p>
+        <div><code> a = "Hello" b = "World" c = a + b print(c) </code></div>
+        <p>
+          String format: As we learned in the Python Variables chapter, we
+          cannot combine strings and numbers like this:
+        </p>
+        <div>
+          <code>
+            age = 36 txt = "My name is John, and I am {}" print(txt.format(age))
+          </code>
+        </div>
+        <p>
+          Escape character:To insert characters that are illegal in a string,
+          use an escape character. An escape character is a backslash \ followed
+          by the character you want to insert. An example of an illegal
+          character is a double quote inside a string that is surrounded by
+          double quotes:
+        </p>
+        <div>
+          <code>
+            txt = "We are the so-called \"Vikings\" from the north."
+          </code>
+        </div>
+        <p>
+          String methods: capitalize(),casefold(),center(),count(),encode()...
+        </p>
+      </section>
+    </main>
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
